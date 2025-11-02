@@ -5,8 +5,8 @@
 
 import { useEffect,  useState } from "react";
 import { useParams } from "react-router-dom";
-import MovieDetail from "../components/MovieDetail";
-import { MovieType } from "../types/movie";
+import MovieDetail from "../../components/MovieDetail";
+import { MovieType } from "../../types/movie";
 import styled from "styled-components";
 
 
@@ -45,6 +45,7 @@ function Detail() {
         <MovieDetail
           title={movieInfo.title}
           year={movieInfo.year}
+          summary={movieInfo.summary}
           description={movieInfo.description_full || ""}
           coverImg={movieInfo.large_cover_image}
           genres={movieInfo.genres}
