@@ -17,6 +17,7 @@ const Header = styled.header`
   .headerInner {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 0 5rem;
     margin: 0 auto;
     max-width: 90vw;
@@ -24,6 +25,7 @@ const Header = styled.header`
   }
 
   h1 {
+    margin: 0;
     color: #e50914;
     font-size: 3rem;
 
@@ -43,6 +45,7 @@ const GenreMenu = styled.ul`
     padding: .5rem;
     font-weight: 500;
     transition: color .4s;
+    -webkit-transition: color .4s;
 
     &:hover {
       color: #b3b3b3;

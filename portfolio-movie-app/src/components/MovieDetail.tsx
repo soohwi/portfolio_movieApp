@@ -21,6 +21,7 @@ const MovieDetailBox = styled.div`
       font-weight: 700;
       opacity: 0;
       transition: all .4s;
+      -webkit-transition: all .4s;
     }
 
     i {
@@ -29,6 +30,7 @@ const MovieDetailBox = styled.div`
       height: 2rem;
       background-color: #e5e5e5;
       mask: url('/src/assets/icon/icon_back.svg') no-repeat;
+      -webkit-mask: url('/src/assets/icon/icon_back.svg') no-repeat;
     }
 
     &:hover {
@@ -77,6 +79,7 @@ const MovieDetailBox = styled.div`
       border: 1px solid #dcdcdc;
       border-radius: .4rem;
       transition: all .4s;
+      -webkit-transition: all .4s;
 
       &:hover {
         color: #141414;

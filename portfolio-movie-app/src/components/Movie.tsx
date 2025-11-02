@@ -11,7 +11,9 @@ const MovieItem = styled.li`
   margin: 0 .5rem;
   width: 20rem;
   transform: scale(1);
+  -webkit-transform: scale(1);
   transition: transform .4s;
+  -webkit-transition: transform .4s;
 
   figure {
     margin: 0;
@@ -27,6 +29,7 @@ const MovieItem = styled.li`
   &:hover {
     z-index: 1;
     transform: scale(1.1);
+    -webkit-transform: scale(1.1);
   }
 `;
 
