@@ -6,7 +6,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { ReactComponent as BackIconSvg } from '../assets/icon/icon_back.svg';
+import BackIconSvg from '../assets/icon/icon_back.svg?react';
 
 const MovieDetailBox = styled.div`
   .btnBack {

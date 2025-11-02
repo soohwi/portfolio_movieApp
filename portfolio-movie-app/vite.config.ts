@@ -13,7 +13,6 @@ export default defineConfig({
     svgr({
       svgrOptions: {
         icon: true,
-        exportType: 'named', // 'default' or 'named'
       },
     }),
   ],
