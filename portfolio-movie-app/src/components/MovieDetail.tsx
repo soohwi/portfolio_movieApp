@@ -58,7 +58,7 @@ const MovieDetailBox = styled.div`
       font-size: 1.5rem;
 
       dt {
-        min-width: 6rem;
+        min-width: 4rem;
         font-weight: 700;
       }
 
@@ -135,12 +135,12 @@ function MovieDetail({title, year, summary, description, coverImg, genres, ratin
         <figcaption>
           <h3>{title}</h3>
           <dl>
-            <dt>출시년도</dt>
+            <dt>개봉</dt>
             <dd>{year}</dd>
           </dl>
           <dl>
             <dt>평점</dt>
-            <dd>{rating}</dd>
+            <dd>⭐️ {rating}</dd>
           </dl>
           {(description || summary) && (
             <div>
