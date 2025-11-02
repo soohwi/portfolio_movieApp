@@ -8,5 +8,13 @@ import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
   base: '/portfolio_movieApp/',
-  plugins: [react(), svgr()],
+  plugins: [
+    react(),
+    svgr({
+      svgrOptions: {
+        icon: true,
+        exportType: 'named', // 'default' or 'named'
+      },
+    }),
+  ],
 });
