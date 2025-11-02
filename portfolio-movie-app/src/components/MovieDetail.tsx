@@ -97,7 +97,7 @@ const MovieDetailBox = styled.div`
 const BackIcon = styled(BackIconSvg)`
   width: 2rem;
   height: 2rem;
-  fill: #e5e5e5;
+  stroke: #e5e5e5;
 `;
 
 
@@ -132,7 +132,7 @@ function MovieDetail({title, year, summary, description, coverImg, genres, ratin
   return (
     <MovieDetailBox>
       <button onClick={handleBack} className="btnBack" aria-label="목록보기">
-        <BackIcon width="20" height="20" fill="#e5e5e5" />
+        <BackIcon />
         <span>목록보기</span>
       </button>
       <figure>
