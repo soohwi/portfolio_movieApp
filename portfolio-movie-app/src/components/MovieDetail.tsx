@@ -6,7 +6,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import backIcon from '../assets/icon/icon_back.svg';
+import { ReactComponent as BackIconSvg } from '../assets/icon/icon_back.svg';
 
 const MovieDetailBox = styled.div`
   .btnBack {
@@ -23,15 +23,6 @@ const MovieDetailBox = styled.div`
       opacity: 0;
       transition: all .4s;
       -webkit-transition: all .4s;
-    }
-
-    i {
-      display: inline-block;
-      width: 2rem;
-      height: 2rem;
-      background-color: #e5e5e5;
-      mask: url(${backIcon}) no-repeat center / contain;
-      -webkit-mask: url(${backIcon}) no-repeat center / contain;
     }
 
     &:hover {
@@ -103,6 +94,13 @@ const MovieDetailBox = styled.div`
   }
 `;
 
+const BackIcon = styled(BackIconSvg)`
+  width: 2rem;
+  height: 2rem;
+  fill: #e5e5e5;
+`;
+
+
 interface Props {
   title: string;
   year: number;
@@ -133,7 +131,10 @@ function MovieDetail({title, year, summary, description, coverImg, genres, ratin
 
   return (
     <MovieDetailBox>
-      <button onClick={handleBack} className="btnBack" aria-label="목록보기"><i></i><span>목록보기</span></button>
+      <button onClick={handleBack} className="btnBack" aria-label="목록보기">
+        <BackIcon width="20" height="20" fill="#e5e5e5" />
+        <span>목록보기</span>
+      </button>
       <figure>
         <img src={coverImg} alt={`${title} 포스터`} />
         <figcaption>
