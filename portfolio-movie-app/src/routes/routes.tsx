@@ -4,7 +4,7 @@
 **/
 
 import Home from "../pages/Home/Home";
-import Detail from "./Detail";
+import Detail from "../pages/Detail/Detail";
 
 export const routes = [
   { path: "/", element: <Home /> },
