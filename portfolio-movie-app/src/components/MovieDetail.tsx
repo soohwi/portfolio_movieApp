@@ -6,6 +6,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import backIcon from '../assets/icon/icon_back.svg';
 
 const MovieDetailBox = styled.div`
   .btnBack {
@@ -29,8 +30,8 @@ const MovieDetailBox = styled.div`
       width: 2rem;
       height: 2rem;
       background-color: #e5e5e5;
-      mask: url('/src/assets/icon/icon_back.svg') no-repeat;
-      -webkit-mask: url('/src/assets/icon/icon_back.svg') no-repeat;
+      mask: url(${backIcon}) no-repeat center / contain;
+      -webkit-mask: url(${backIcon}) no-repeat center / contain;
     }
 
     &:hover {
