@@ -5,7 +5,6 @@
 
 import styled from "styled-components";
 
-//< style
 const Header = styled.header`
   position: fixed;
   z-index: 10;
@@ -41,6 +40,7 @@ const GenreMenu = styled.ul`
   gap: 0 1rem;
 
   a {
+    padding: .5rem;
     font-weight: 500;
     transition: color .4s;
 
@@ -49,7 +49,6 @@ const GenreMenu = styled.ul`
     }
   }
 `;
-//> style
 
 interface Props {
   total: number;

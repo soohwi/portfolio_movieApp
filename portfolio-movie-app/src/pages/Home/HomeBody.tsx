@@ -7,7 +7,6 @@ import styled from "styled-components";
 import Movie from "../../components/Movie";
 import { MovieType } from "../../types/movie";
 
-//< style
 const MovieSection = styled.section`
   padding: 2rem 0;
   scroll-margin-top: 7rem;
@@ -26,7 +25,6 @@ const MovieList = styled.div`
     display: flex;
   }
 `;
-//> style
 
 interface Props {
   moviesByGenre: Record<string, MovieType[]>

@@ -7,10 +7,8 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import HomeHeader from "./HomeHeader";
 import HomeBody from "./HomeBody";
-import Movie from "../../components/Movie";
 import { MovieType } from "../../types/movie";
 
-//< style
 const HomeWrapper = styled.div`
   margin: 0 auto;
   padding-top: 7rem;
@@ -25,7 +23,6 @@ const LoadingBox = styled.div`
   font-size: 2rem;
   font-weight: 500;
 `;
-//> style
 
 function Home() {
   const [loading, setLoading] = useState(true);
