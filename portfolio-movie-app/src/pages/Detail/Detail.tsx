@@ -46,7 +46,7 @@ function Detail() {
           title={movieInfo.title}
           year={movieInfo.year}
           summary={movieInfo.summary}
-          description={movieInfo.description_full || ""}
+          description={movieInfo.description_full || movieInfo.summary || ""}
           coverImg={movieInfo.large_cover_image}
           genres={movieInfo.genres}
           rating={movieInfo.rating}
